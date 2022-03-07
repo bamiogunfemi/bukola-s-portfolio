@@ -35,6 +35,10 @@
       text-align: left;
       width: 18ch;
 
+      @media (max-width: 900px) {
+        font-size: 26px;
+        line-height: 26px;
+      }
 
       &-blue {
         color: $color-primary;

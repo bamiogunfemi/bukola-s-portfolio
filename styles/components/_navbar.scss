@@ -30,6 +30,11 @@
     display: grid;
     grid-gap: 40px;
 
+    @media screen and (max-width: 600px) {
+      grid-column: auto;
+      grid-gap: 20px;
+    }
+
     &-item {
       font-family: Lato;
       font-size: 14px;
@@ -38,6 +43,10 @@
       line-height: 32px;
       letter-spacing: 0em;
       text-align: left;
+
+      @media screen and (max-width: 600px) {
+        font-size: 12px;
+      }
 
       &:hover {
         background-repeat: no-repeat;
