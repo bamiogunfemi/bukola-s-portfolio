@@ -1,0 +1,90 @@
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &-content {
+    width: 672px;
+    max-width: 672px;
+
+    &-greeting {
+      font-family: $default-font-family;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+
+    }
+
+    &-info {
+      font-family: $default-font-family;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 60px;
+      letter-spacing: 0em;
+      text-align: left;
+      width: 18ch;
+
+
+      &-blue {
+        color: $color-primary;
+      }
+
+    }
+
+    &-social {
+      display: grid;
+      margin-top: 57px;
+      grid-template-columns: 50px 70px 70px;
+
+      span {
+        overflow: visible;
+      }
+
+      &-box {
+        border-right: 2px solid $color-tetiary;
+        text-align: center;
+      }
+
+      &-box:first-child {
+        text-align: left;
+      }
+
+      &-box:last-child {
+        border-right: none;
+
+
+      }
+
+    }
+  }
+
+  &-memoji {
+    &-container {
+      background: $color-primary;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+
+    @media (max-width: 1169px) {
+      margin-top: 60px
+    }
+
+
+
+    .first {
+      width: 196px;
+      height: 196px;
+    }
+
+    .second,
+    .last {
+      width: 124px;
+      height: 124px;
+    }
+  }
+}

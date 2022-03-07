@@ -1,0 +1,44 @@
+.header {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 80px);
+  align-content: space-around;
+  justify-content: space-between;
+
+  &-left {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    margin: auto 0;
+
+    &-logo {
+      font-family: Lato;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: 0em;
+      text-align: left;
+
+    }
+  }
+
+  &-right {
+    list-style: none;
+    grid-column: 5/ 5;
+    grid-row: 1;
+    grid-auto-flow: column;
+    display: grid;
+    grid-gap: 40px;
+
+    &-item {
+      font-family: Lato;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px;
+      letter-spacing: 0em;
+      text-align: left;
+
+    }
+  }
+}
