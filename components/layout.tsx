@@ -12,7 +12,7 @@ export const HomeLayout = ({ children, title }: HomeLayoutProps) => {
     <>
       <Head>
         <title>{`${title} | Bukola Ogunfemi`}</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="robots" content="index, follow" />
         <meta

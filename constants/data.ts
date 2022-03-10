@@ -7,7 +7,7 @@ export const socialData = [
   {
     icon: "/images/ig.svg",
     name: "instagram",
-    url: "https://www.linkedin.com/in/adebukola-ogunfemi-b508a4108/",
+    url: "https://www.instagram.com/arin_olar/",
   },
   {
     icon: "/images/linkedin.svg",
