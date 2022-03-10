@@ -68,7 +68,7 @@ const Index = ({ posts }: any) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const posts = await client.fetch(groq`
   *[
     _type == "post"
