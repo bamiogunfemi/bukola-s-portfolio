@@ -1,5 +1,3 @@
-import { images } from "./images";
-
 export const socialData = [
   {
     icon: "/images/twitter.svg",
@@ -17,5 +15,3 @@ export const socialData = [
     url: "https://www.linkedin.com/in/adebukola-ogunfemi-b508a4108/",
   },
 ];
-
-export const color_primary = "rgba(0, 117, 255, 0.44)";

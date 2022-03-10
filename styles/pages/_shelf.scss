@@ -1,0 +1,52 @@
+.shelf {
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 1.45rem 1.0875rem;
+
+  &-container {
+    margin-bottom: 30px;
+  }
+
+  &-name {
+    font-family: $default-font-family;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-transform: capitalize;
+
+  }
+
+  &-title {
+    font-family: $default-font-family;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-transform: capitalize;
+  }
+
+  &-date,
+  &-time,
+  &-except {
+    font-family: $default-font-family;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+
+  }
+
+  &-date {
+    color: grey;
+  }
+}
+
+.post-container {
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 1.45rem 1.0875rem;
+}
