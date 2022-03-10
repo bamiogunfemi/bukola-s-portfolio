@@ -22,14 +22,14 @@ const Home: NextPage = () => {
         <section className="home-content">
           <p className="home-content-greeting">Heyoo!</p>
           <h2 className="home-content-info">
-            I’m{" "}
+            I'm,{" "}
             <span
               className="home-content-info-underline"
               onMouseEnter={onHomeNameEnter}
               onMouseLeave={onHomeNameLeave}>
               Bukola Ogunfemi
             </span>{" "}
-            <br /> A Content Strategist and storytelling goddess {""}
+            <br /> a Content Strategist and storytelling goddess {""}
             <span className="home-content-info-blue">
               based in Lagos, Nigeria.
             </span>
