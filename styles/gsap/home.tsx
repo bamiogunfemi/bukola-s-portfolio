@@ -56,6 +56,7 @@ export const onHomeNameEnter = ({ currentTarget }: MouseEventHandler | any) => {
     color: "white",
   });
 };
+
 export const onHomeNameLeave = ({ currentTarget }: MouseEventHandler | any) => {
   gsap.to(currentTarget, {
     duration: 0.2,
@@ -63,12 +64,14 @@ export const onHomeNameLeave = ({ currentTarget }: MouseEventHandler | any) => {
     color: "black",
   });
 };
+
 export const onImageEnter = ({ currentTarget }: MouseEventHandler | any) => {
   gsap
     .timeline()
     .to(currentTarget, { duration: 0.25, x: 1, ease: "easeOut" })
     .to(currentTarget, { duration: 0.25, x: -1, ease: "easeIn" });
 };
+
 export const onImageLeave = ({ currentTarget }: MouseEventHandler | any) => {
   gsap.timeline().to(currentTarget, { duration: 0.25, x: 0, ease: "easeOut" });
 };
