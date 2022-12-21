@@ -6,7 +6,7 @@ export const HomeNavbar = () => {
     <header className="header">
       <div className="header-left">
         <Link href="/" passHref>
-          <h1 className="header-left-logo">Bo.</h1>
+          <img src="/images/logo.png" className="header-left-logo" alt="logo" />
         </Link>
       </div>
       <ul className="header-right">

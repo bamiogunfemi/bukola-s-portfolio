@@ -5,8 +5,17 @@
 
   &-container {
     margin-bottom: 30px;
+
+  }
+&-images{
+  &-container {
+    text-align: center;
+
+    margin-top: 20px ;
+
   }
 
+}
   &-name {
     font-family: $default-font-family;
     font-size: 60px;

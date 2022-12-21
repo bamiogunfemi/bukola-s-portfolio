@@ -30,20 +30,20 @@ const ptComponents = {
         return null;
       }
       let imageSrc: any = urlFor(value)
-        .width(320)
-        .height(240)
+        .width(500)
+        .height(500)
         .fit("max")
         .auto("format");
 
       return (
-        <Image
-          alt={value.alt || " "}
-          height={23}
-          className="logo"
-          src={imageSrc}
-          width={24}
-          loading="lazy"
-        />
+        <div className="shelf-images-container">
+          <img
+            alt={value.alt || " "}
+            className="shelf-images"
+            src={imageSrc}
+            loading="lazy"
+          />
+        </div>
       );
     },
   },
@@ -51,6 +51,7 @@ const ptComponents = {
 
 const Post = ({ post }: any) => {
   const router = useRouter();
+  console.log(post);
   const { body = [], title, publishedAt } = post;
   useEffect(() => {
     gsap.to(".shelf-title", {
@@ -96,6 +97,8 @@ const Post = ({ post }: any) => {
 const query = groq`*[_type == "post" && slug.current == $slug][0]{
   title,
   "categories": categories[]->title,
+  "mainImage" :mainImage.asset->url,
+  categories,author,
    body, publishedAt
 }`;
 export async function getStaticPaths() {

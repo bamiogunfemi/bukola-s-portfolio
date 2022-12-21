@@ -20,7 +20,7 @@ export const HomeLayout = ({ children, title }: HomeLayoutProps) => {
           content="Bukola Ogunfemi is a Growth & Content Queen with experience in helping brands relate their message to their target audience by
 telling stories."
         />
-        <link rel="icon" href="/images/logo.svg" />
+        <link rel="icon" href="/images/logo.png" />
       </Head>
       <main className="main">
         <HomeNavbar />
