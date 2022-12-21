@@ -51,7 +51,6 @@ const ptComponents = {
 
 const Post = ({ post }: any) => {
   const router = useRouter();
-  console.log(post);
   const { body = [], title, publishedAt } = post;
   useEffect(() => {
     gsap.to(".shelf-title", {
@@ -76,6 +75,7 @@ const Post = ({ post }: any) => {
           <span className="shelf-time">5 mins</span>
         </p>
         <PortableText value={body} components={ptComponents} />
+
         <Share
           title={`You should read ${title}`}
           url={url}
