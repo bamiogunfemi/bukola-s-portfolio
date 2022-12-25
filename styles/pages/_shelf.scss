@@ -60,4 +60,9 @@ height: 100%;
   margin: 0 auto;
   max-width: 860px;
   padding: 1.45rem 1.0875rem;
+  a{
+    text-decoration: underline;
+    color: $color-primary;
+    cursor: pointer;
+  }
 }
