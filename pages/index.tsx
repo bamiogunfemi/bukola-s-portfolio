@@ -36,7 +36,7 @@ const Home: NextPage = () => {
           </h2>
           <p className="home-content-info-sub">
             I help brands relate their message to their target audience by
-            telling stories. I am a storyteller with over two years of
+            telling stories. I am a storyteller with over three years of
             professional experience acting as an intermediary between brands and
             their target audience. I am passionate about career growth and
             development.{" "}
