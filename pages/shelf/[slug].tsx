@@ -39,8 +39,10 @@ const ptComponents = {
         <div className="shelf-images-container">
           <img
             alt={value.alt || " "}
-            className="shelf-images"
+            height={"100%"}
+            className=""
             src={imageSrc}
+            width={"100%"}
             loading="lazy"
           />
         </div>

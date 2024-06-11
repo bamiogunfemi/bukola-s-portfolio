@@ -7,17 +7,26 @@
     margin-bottom: 30px;
 
   }
-&-images{
-  &-container {
-    text-align: center;
-    margin-top: 20px ;
-img{
-width: 100%;
-height: 100%;
-}
+
+  &-images {
+    &-container {
+      text-align: center;
+      margin-top: 20px;
+
+      img {
+        display: block;
+        margin: auto;
+        width: 100%;
+
+        @media (min-width: 1024px) {
+          width: 66.666667%;
+
+        }
+      }
+    }
+
   }
 
-}
   &-name {
     font-family: $default-font-family;
     font-size: 60px;
@@ -60,7 +69,8 @@ height: 100%;
   margin: 0 auto;
   max-width: 860px;
   padding: 1.45rem 1.0875rem;
-  a{
+
+  a {
     text-decoration: underline;
     color: $color-primary;
     cursor: pointer;
